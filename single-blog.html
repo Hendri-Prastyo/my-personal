@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Mona - Model Agency HTML5 Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>My - Personal Website</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+ <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curveh.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Project</a></li>
+                <li><a href="./blog.html">My Article</a></li>
+                <li><a href="./casting.html">Contact Me</a></li>
+              </ul>
+
+              <!-- Search Icon -->
+              <div class="search-icon" data-toggle="modal" data-target="#searchModal">
+                <i class="icon_search"></i>
+              </div>
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area">
+    <div class="container h-100">
+      <div class="row h-100 align-items-end">
+        <div class="col-12">
+          <div class="breadcumb--con">
+            <h2 class="title">Article</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="blog.html">Articel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Article Details</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Blog Details Area Start ***** -->
+<section class="blog-details-area">
+  <div class="container">
+    <div class="row">
+      <!-- Blog Details -->
+      <div class="col-12 col-lg-8">
+        <div class="blog-details-content mt-5 mb-80 pe-lg-4" style="border-right: 1px solid #eee;">
+          <!-- Post Details Text -->
+          <div class="post-details-text" id="post-details">
+            
+
+            <div class="post-content mt-30 mb-30">
+              
+            </div>
+
+            
+
+           
+            <!-- End Related News Area -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+            <div class="col-12 col-lg-4">
+              <div class="sidebar-area mt-5 ps-lg-4">
+                <!-- Latest Blogs Widget -->
+                <div class="single-widget-area news-widget mb-80">
+                  <h5 class="widget-title">Latest Article</h5>
+                  <div id="latest-blogs">
+                    <!-- Daftar artikel akan di-generate dari JavaScript -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Sidebar -->
+
+    </div>
+  </div>
+</section>
+<!-- ***** Blog Details Area End ***** -->
+
+ <!-- ***** Footer Area Start ***** -->
+<footer class="footer-area section-padding-40-0">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+
+      <!-- Footer Content -->
+      <div class="col-12">
+          <div class="single-footer-widget mb-30">
+             <p>Email: hendriprastyomhs28@gmail.com</p>
+            <div class="footer-social-info mt-3 mb-3">
+              <a href="https://instagram.com/hndrriii" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://wa.me/628745739739" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+              <a href="mailto:hendriprastyomhs28@gmail.com" class="email"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="copywrite-text">
+              <p>&copy; <script>document.write(new Date().getFullYear());</script> Hendri. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+
+          <!-- Copyright -->
+          <div class="copywrite-text">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Hendri. All Rights Reserved.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- ***** Footer Area End ***** -->
+
+
+  <!-- ******* All JS ******* -->
+   <script>
+  // Data artikel (bisa kamu pindah ke file JSON kalau mau lebih rapi)
+const articles = [
+  {
+    id: 1,
+    title: "Harga Ayam Naik 2025: Pedagang Olahan Tertekan, Anak Gym Cari Alternatif Protein",
+    date: "Jum'at, 26 September 2025",
+    author: "Admin",
+    source: "https://www.kompasiana.com/widikurniawan/5ea3d2bfd541df2e743ae9b3/peduli-sekitar-kunci-di-tengah-ketidakpastian",
+    thumbnail: "./img/bg-img/ayam.png",
+    image: "./img/bg-img/ayam.png",
+    content: `
+      <p>Belakangan ini, harga daging ayam naik drastis di berbagai pasar 
+        tradisional maupun supermarket. Lonjakan harga ayam membuat banyak pedagang olahan pusing, 
+        sementara anak gym yang mengandalkan ayam sebagai sumber protein utama juga ikut 
+        merasakan dampaknya.</p>
+        <p>Kenaikan harga ayam belakangan ini disebut-sebut turut dipengaruhi oleh program <span><em>Makan Bergizi Gratis
+           (MBG)</em></span> yang diluncurkan pemerintah. Program ini menyerap pasokan ayam dan telur dalam jumlah 
+           besar untuk kebutuhan dapur MBG, sehingga mengurangi ketersediaan di pasar tradisional.</p>
+      <ul>
+        <li><strong>Program MBG (Makan Bergizi Gratis)</strong> – Membuat sebagian pasokan ayam dialihkan untuk memenuhi kebutuhan sekolah,
+           sehingga stok di pasar umum berkurang dan harga ikut terdorong naik.</li>
+        <li><strong>Kenaikan Biaya Produksi</strong> – Harga pakan ternak yang terus merangkak naik membuat peternak terpaksa menyesuaikan harga jual ayam agar tidak merugi.</li>
+        <li><strong>Distribusi dan Permintaan</strong> – Permintaan ayam meningkat tajam, namun distribusi dari peternak ke pasar belum berjalan lancar, 
+          sehingga menimbulkan ketidakseimbangan antara ketersediaan dan kebutuhan.</li>
+      </ul> <br>
+
+      <p>Pedagang pecel ayam, ayam geprek, hingga pedagang olahan lainya seperi Siomay kini harus memutar otak untuk mempertahankan usaha mereka. 
+        Sebagian memilih menaikkan harga jual, 
+        sementara sebagian lain mengurangi porsi agar pelanggan tidak kabur. 
+        Jika kenaikan harga daging ayam terus meroket, daya beli konsumen dikhawatirkan melemah.</p>
+        <p>Tak hanya pedagang, anak gym juga turut merasakan dampaknya. Pasalnya, 
+          daging ayam selama ini dikenal sebagai primadona sumber protein yang terjangkau, 
+          mudah diolah, dan kaya nutrisi untuk mendukung pertumbuhan otot mereka. Bahkan, beberapa dari mereka yang terkendala finansial kini harus
+          memilih sumber protein dari alternatif lain seperti telur, tahu, tempe, ikan.</p>
+      <ul>
+        <li><strong>Telur ayam</strong> – murah, bergizi, dan kaya protein.</li>
+        <li><strong>Tahu dan tempe</strong> – sumber protein nabati ekonomis.</li>
+        <li><strong>Ikan</strong> – seperti lele, nila, atau patin dengan harga relatif stabil.</li>
+      </ul><br>
+      <p>Kenaikan harga daging ayam 2025 bukan sekadar masalah pasar, 
+        tapi juga berdampak langsung pada kehidupan sehari-hari. 
+        Pedagang olahan harus pintar mengatur strategi usaha mereka agar tetap berjalan tanpa takut 
+        kehilangan konsumen, 
+        sementara anak gym mencari alternatif protein yang lebih ramah untuk dompet mereka.</p>
+      <p><em>"Apakah harga ayam akan segera stabil atau justru makin mahal ke depannya? mengingat Program Makan Bergizi Gratis (MBG) ini belum sepenuhnya tersalurkan disemua daerah.."</em></p>
+`
+  },
+  {
+  id: 2,
+  title: "Wakil Kepala BGN Menangis dan Memohon Maaf atas Kasus Keracunan MBG",
+  date: "Sabtu, 27 September 2025",
+  author: "Admin",
+  source: "https://www.cnnindonesia.com/nasional/20250926161128-24-1278118/video-isak-tangis-wakil-kepala-bgn-saat-minta-maaf-soal-keracunan-mbg",
+  thumbnail: "https://asset-2.tribunnews.com/newsmaker/foto/bank/images/Wakil-Kepala-Badan-Gizi-Nasional-BGN-Nanik-S-Deyang.jpg",
+  image: "https://asset-2.tribunnews.com/newsmaker/foto/bank/images/Wakil-Kepala-Badan-Gizi-Nasional-BGN-Nanik-S-Deyang.jpg",
+  content: `
+    <p>Dalam video yang tersebar luas, **Wakil Kepala Badan Gizi Nasional (BGN), Nanik S. Deyang**, terlihat mengulang jawabannya dengan isak tangis saat meminta maaf kepada publik atas kasus keracunan yang terjadi dalam program <em>Makan Bergizi Gratis (MBG)</em>. :contentReference[oaicite:0]{index=0}</p>
+
+    <p>Kasus keracunan MBG ini dilaporkan terjadi di sejumlah sekolah dan daerah, memengaruhi ribuan siswa yang mengonsumsi menu bergizi dari program tersebut. :contentReference[oaicite:1]{index=1}</p>
+    <p>Dalam video tersebut,<strong>Nanik S. Deyang</strong> – mengaku sangat sedih dan 
+      bertanggung jawab atas insiden yang menimpa anak-anak sekolah.
+      Ia menyampaikan permohonan maaf kepada warga sekolah, orang tua, serta semua pihak 
+      yang terkena dampak dari kejadian ini.</li>
+      Nanik juga menegaskan bahwa BGN akan melakukan evaluasi 
+      menyeluruh terhadap mekanisme pelaksanaan MBG agar kasus serupa tak terulang.</p>
+  
+    <p>Kasus keracunan ini menimbulkan kekhawatiran terutama di
+       kalangan orang tua dan sekolah, yang mempertanyakan keamanan, 
+       seleksi bahan makanan, serta pengawasan pelaksanaan MBG. 
+       Apabila prosedur pengolahan makanan dan distribusi tidak diperketat, 
+       kredibilitas dan kepercayaan terhadap program MBG bisa terkikis.</p>
+
+       <p><Evaluasi dan audit proses penyediaan makanan — mulai
+         dari sourcing bahan baku hingga pengolahan di lapangan.
+      Peninjauan ulang mitra pelaksana di daerah-daerah agar
+         memenuhi standar kebersihan dan keamanan pangan.
+      Pemberian klarifikasi dan transparansi kepada 
+        publik mengenai penyebab pasti keracunan serta langkah perbaikan.
+      Peningkatan pengawasan lokal melalui dinas kesehatan dan dinas pendidikan di tiap daerah.</p>
+   
+
+    <p>Insiden keracunan MBG ini menjadi peringatan serius bahwa pelaksanaan program pangan untuk sekolah harus memiliki standar mutu dan pengawasan yang ketat. Publik menunggu langkah konkret agar program makan bergizi tetap memberi manfaat, bukan malah menimbulkan risiko kesehatan. </p>
+
+    <p><em>"Semoga kejadian seperti ini segera dievaluasi dan diperbaiki agar kepercayaan masyarakat terhadap program MBG tetap terjaga."</em></p>
+  `
+},
+{
+  id: 3,
+  title: "Generasi TikTok: Saat Media Sosial Membentuk Standar Kecantikan dan Gaya Hidup",
+  date: "Minggu, 28 September 2025",
+  author: "Admin",
+  source: "https://www.youtube.com/watch?v=qk1_uWKvesY",
+  thumbnail: "https://i.ytimg.com/vi/qk1_uWKvesY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAk1yWKBPIrKHpH5P_tTI9sqjOzJw",
+  image: "https://i.ytimg.com/vi/qk1_uWKvesY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAk1yWKBPIrKHpH5P_tTI9sqjOzJw",
+  content: `
+    <p>Belakangan ini video TikTok sering kali memperlihatkan konten tentang transformasi, <em>“glow up”</em>, 
+      gaya hidup mewah, dan penampilan sempurna semuanya tampak begitu ideal. Konten video seperti itu
+       bisa berpengaruh besar terhadap generasi muda, membentuk standar kecantikan dan 
+       gaya hidup yang kadang sulit dicapai.</p>
+
+    <p>Tak jarang, muncul tekanan sosial untuk selalu tampil sempurna, memiliki barang branded,
+       atau menjalani hidup ala selebritas dunia maya. Padahal, 
+       realitas di balik layar sering kali jauh berbeda dengan apa yang ditampilkan. 
+       Akibatnya, sebagian remaja merasa kurang percaya diri, membandingkan diri secara berlebihan, 
+       hingga berujung pada rasa cemas dan rendah diri.</p>
+    <p>Dalam video yang beredar luas di TikTok, terlihat rangkaian konten transformasi atau <em>glow up</em> yang menampilkan perubahan penampilan secara dramatis. Mulai dari gaya rambut, perawatan kulit, hingga pakaian ditata sedemikian rupa sehingga hasil akhir tampak sempurna dan berbeda jauh dengan kondisi awal. Hal ini memberi kesan bahwa standar kecantikan ideal adalah hasil dari sebuah proses transformasi besar yang penuh dengan efek visual dan editing menarik.</p>
+
+<p>Selain menonjolkan transformasi fisik, video juga menampilkan gaya hidup estetik dan konsumtif. Adegan nongkrong di café kekinian, dekor kamar minimalis ala influencer, serta penggunaan produk skincare maupun klinik kecantikan memberi pesan implisit bahwa untuk terlihat keren dan modern, seseorang harus memiliki barang, ruang, atau pengalaman yang memenuhi standar estetika tertentu.</p>
+
+<p>Kesan yang dibangun dalam video kerap menimbulkan tekanan sosial, khususnya pada generasi muda. Narasi implisit yang muncul adalah: apabila penampilan atau gaya hidup belum sesuai dengan yang ditampilkan di layar, berarti ada sesuatu yang kurang. Akibatnya, penonton terdorong untuk membandingkan diri dengan pembuat konten atau orang lain, yang pada akhirnya bisa memicu rasa rendah diri maupun kecemasan sosial.</p>
+
+<p>Di sisi lain, beberapa kreator mencoba menghadirkan pesan pencerahan. Pada bagian penutup, ada yang mengingatkan penonton agar tidak terjebak standar visual semata. Media sosial, terutama TikTok, sering kali hanya menampilkan potongan terbaik atau “puncak” kehidupan seseorang, bukan keseluruhan realitas. Pesan ini menjadi pengingat penting bahwa keunikan diri dan proses personal jauh lebih berharga daripada sekadar hasil akhir yang tampak sempurna.</p>
+
+<p>Fenomena ini menunjukkan bagaimana algoritma TikTok bekerja: konten dengan daya tarik visual tinggi, filter kecantikan, dan editing yang memukau lebih mudah masuk ke <em>For You Page</em>. Akibatnya, standar kecantikan dan gaya hidup ideal terasa seperti norma yang berlaku umum. Generasi muda yang setiap hari terpapar pada konten semacam ini berisiko merasa tidak cukup baik jika tidak mampu menyamai standar tersebut.</p>
+
+<p>Dampak lainnya adalah meningkatnya tren konsumtif. Produk kosmetik, fashion, hingga dekorasi aesthetic diposisikan sebagai bagian dari identitas modern. Banyak remaja kemudian merasa harus membeli barang-barang viral agar bisa diterima dan terlihat kekinian. Meski di sisi positif konten semacam ini mendorong kreativitas dalam storytelling, editing, maupun eksplorasi gaya, sisi otentik sering kali tersamarkan oleh kesempurnaan visual yang ditampilkan.</p>
+
+<p>Untuk menyikapi fenomena ini, diperlukan literasi digital dan kesadaran diri. Generasi muda harus memahami bahwa media sosial hanyalah “highlight reel” — potongan terbaik, bukan realitas penuh. Dengan berfokus pada proses, menghargai keunikan diri, serta menyeimbangkan konsumsi konten visual dengan bacaan atau diskusi bermakna, seseorang bisa terhindar dari jebakan standar semu.</p>
+
+<p><em>"Pada akhirnya, media sosial sebaiknya menjadi ruang untuk berkarya dan berekspresi, bukan sekadar arena untuk membandingkan diri. Glow up terbaik adalah ketika seseorang mampu bertumbuh sesuai potensinya sendiri, tanpa harus terjebak standar orang lain."</em></p>
+
+  `
+},
+{
+  id: 4,
+  title: "Algoritma TikTok: Siapa yang Mengontrol Apa yang Kita Lihat?",
+  date: "Minggu, 28 September 2025",
+  author: "Admin",
+  source: "https://www.youtube.com/watch?v=H73Q1W_NSho&pp=ygUiYmFnYWltYW5hIGFsZ29yaXRtYSB0aWt0b2sgYmVrZXJqYQ%3D%3D",
+  thumbnail: "https://cdn-artikel.ngalup.co/wp-content/uploads/2024/07/Jadwal-FYP-TikTok-Setiap-Harinya-di-2024.jpg",
+  image: "https://cdn-artikel.ngalup.co/wp-content/uploads/2024/07/Jadwal-FYP-TikTok-Setiap-Harinya-di-2024.jpg",
+  content: `
+    <p>TikTok dikenal sebagai aplikasi hiburan yang mampu membuat siapa pun viral hanya dalam hitungan jam. 
+Di balik layar, terdapat sistem algoritma canggih yang menentukan video apa yang muncul di 
+<em>For You Page (FYP)</em>. Algoritma inilah yang secara tidak langsung mengontrol 
+apa yang kita lihat setiap hari di layar ponsel.</p>
+
+<p>Algoritma TikTok bekerja dengan menganalisis perilaku pengguna. 
+Mulai dari video apa yang ditonton sampai habis, tombol like yang ditekan, 
+komentar yang ditulis, hingga konten yang dibagikan. 
+Semua interaksi ini menjadi data yang kemudian digunakan untuk menyusun rekomendasi personal bagi setiap pengguna.</p>
+
+<p>Selain interaksi, faktor lain seperti caption, hashtag, musik, serta efek visual 
+juga sangat berpengaruh. Konten dengan elemen yang populer dan menarik secara visual 
+cenderung lebih mudah masuk ke FYP. Hal ini membuat kreator berlomba-lomba menghadirkan 
+konten yang sesuai dengan selera algoritma, bukan semata-mata selera pribadi.</p>
+
+<p>Bagi generasi muda, dampaknya bisa sangat besar. 
+Paparan konten yang seragam berpotensi membentuk sudut pandang di mana pengguna hanya melihat hal-hal yang mereka sukai, 
+tanpa kesempatan untuk mendapat perspektif lain. 
+Kondisi ini dapat mengubah pola pikir, perilaku konsumsi, bahkan standar sosial yang mereka anggap normal.</p>
+
+<p>Di sisi positif, algoritma juga membuka peluang. 
+Kreator baru bisa terkenal tanpa harus punya banyak pengikut terlebih dahulu. 
+Namun, sisi negatifnya adalah risiko kecanduan digital, karena sistem terus menawarkan 
+konten yang membuat pengguna betah berlama-lama menatap layar.</p>
+
+<p>Pertanyaan penting kemudian muncul: siapa sebenarnya yang mengontrol semua ini? 
+Jawabannya adalah perusahaan di balik TikTok yang menetapkan aturan algoritma. 
+Mereka menentukan konten apa yang diprioritaskan, tren apa yang dipopulerkan, 
+hingga konten apa yang harus dibatasi. Dengan kata lain, kendali atas informasi yang 
+kita konsumsi bukan sepenuhnya milik kita, melainkan dikurasi oleh sistem.</p>
+
+<p>Untuk menyikapi hal ini, diperlukan literasi digital yang kuat. 
+Generasi muda perlu sadar bahwa apa yang muncul di FYP hanyalah potongan kecil 
+dari dunia nyata. Membatasi waktu penggunaan, mencari variasi konten, serta menggunakan 
+TikTok sebagai sarana berkarya bisa menjadi langkah bijak untuk tetap sehat di era digital ini.</p>
+
+<p><em>"Pada akhirnya, algoritma hanyalah alat. 
+Kitalah yang menentukan apakah ingin dikendalikan olehnya, 
+atau justru memanfaatkannya untuk bertumbuh dan berkarya."</em></p>
+
+
+  `
+},
+{
+  id: 5,
+  title: "Kuliah Demi Hindari Pengangguran? Begini Realita Generasi Muda Saat Ini",
+  date: "Senin, 29 September 2025",
+  author: "Admin",
+  source: "https://www.cnbcindonesia.com/research/20250501113031-128-630195/banyak-sarjana-menganggur-gelar-ijazah-tak-bisa-lagi-jadi-senjata",
+  thumbnail: "https://awsimages.detik.net.id/community/media/visual/2023/05/02/belasan-juta-sarjana-china-jadi-pengangguran-gegara-pandemi-covid-7_169.jpeg?w=1200",
+  image: "https://awsimages.detik.net.id/community/media/visual/2023/05/02/belasan-juta-sarjana-china-jadi-pengangguran-gegara-pandemi-covid-7_169.jpeg?w=1200",
+  content: `
+    <p>Fenomena lulusan sarjana yang sulit mendapat pekerjaan kini semakin sering menjadi perbincangan. 
+Banyak orang bertanya-tanya: mengapa justru setelah menempuh pendidikan tinggi, 
+sebagian lulusan malah berakhir menjadi pengangguran? 
+Dan banyak mahasiswa yang memilih melanjutkan kuliah hanya untuk menghindari pengangguran 
+setelah lulus SMA atau SMK??.</p>
+
+<p>Salah satu penyebabnya adalah ketidaksesuaian antara dunia pendidikan dengan dunia kerja. 
+Banyak kampus masih menekankan teori dibanding praktik, 
+sehingga ketika lulus, mahasiswa kurang memiliki keterampilan yang dibutuhkan industri. 
+Akibatnya, meski gelar sudah di tangan, peluang kerja tetap terbatas.</p>
+
+<p>Selain itu, jumlah lulusan sarjana yang terus bertambah tiap tahun 
+tidak seimbang dengan lapangan kerja yang tersedia. 
+Persaingan menjadi sangat ketat, bukan hanya dengan sesama fresh graduate, 
+tetapi juga dengan pekerja berpengalaman. 
+Hal ini membuat banyak sarjana harus beradaptasi dengan realita, 
+yakni bekerja di bidang yang tidak sesuai jurusan, bahkan di posisi yang tidak mensyaratkan gelar.</p>
+
+<p>Kondisi ini membuat sebagian orang melihat kuliah bukan lagi sebagai jaminan karier gemilang, 
+melainkan sekadar “jalan aman” untuk menunda pengangguran setelah SMA. 
+Dengan berkuliah, seseorang mendapat status sosial lebih baik, 
+waktu untuk mengembangkan diri, sekaligus kesempatan memperluas jaringan. 
+Namun, tujuan utamanya sering bergeser: bukan lagi sekadar mencari ilmu, 
+melainkan agar tidak langsung terjun ke dunia kerja yang keras.</p>
+
+<p>Fenomena ini juga memperlihatkan pentingnya keterampilan non-akademik. 
+Kemampuan komunikasi, teknologi, kreativitas, hingga jiwa kewirausahaan 
+menjadi nilai tambah yang lebih dicari perusahaan dibanding hanya gelar sarjana. 
+Tak jarang, orang yang tidak berkuliah tapi punya skill spesifik justru lebih cepat sukses di dunia kerja.</p>
+
+<p>Meski begitu, kuliah tetap memiliki peran penting. 
+Selain membuka akses ke ilmu pengetahuan, kampus juga bisa menjadi ruang untuk membentuk pola pikir kritis, 
+mengasah jejaring, dan membangun pengalaman. 
+Namun, agar gelar sarjana tidak sekadar jadi formalitas, 
+mahasiswa perlu aktif mencari pengalaman lain seperti magang, organisasi, atau proyek sampingan.</p>
+
+<p><em>“Pada akhirnya, kuliah hanyalah salah satu jalan, bukan satu-satunya. 
+Gelar sarjana bisa membantu, tapi yang paling menentukan tetaplah keterampilan, 
+mental, dan kreativitas kita dalam menghadapi dunia kerja yang terus berubah.”</em></p>
+
+
+
+  `
+},
+{
+  id: 6,
+  title: "Bisnis Online Menjanjikan: YouTube, TikTok Affiliate, Shopee, Produk Digital, hingga Streamer",
+  date: "Senin, 29 September 2025",
+  author: "Admin",
+  source: "",
+  thumbnail: "https://cdn.prod.website-files.com/65798185544a4aa785b21bff/66ea5e7fe37cfec149cfafe4_menghasilkan-uang-podcast%2B%25281%2529.jpeg",
+  image: "https://cdn.prod.website-files.com/65798185544a4aa785b21bff/66ea5e7fe37cfec149cfafe4_menghasilkan-uang-podcast%2B%25281%2529.jpeg",
+  content: `
+    <p>Di era digital, bisnis online menjadi salah satu pilihan paling menjanjikan. 
+Banyak orang beralih ke dunia digital karena peluangnya luas, modal relatif kecil, 
+dan fleksibilitas waktu yang ditawarkan. 
+Hanya dengan perangkat dan koneksi internet, siapa pun bisa memulai usaha 
+tanpa harus menyewa toko fisik atau mengeluarkan biaya besar.</p>
+
+<p>Salah satu tren bisnis online yang berkembang pesat adalah menjadi kreator YouTube. 
+Dengan mengunggah video yang konsisten dan menarik, kreator bisa memperoleh penghasilan 
+dari iklan, sponsor, hingga program YouTube Partner. 
+Meski persaingan ketat, peluang masih terbuka lebar bagi mereka yang mampu menghadirkan 
+konten kreatif dan relevan dengan kebutuhan penonton.</p>
+
+<p>Selain YouTube, TikTok kini melahirkan tren baru melalui program <em>affiliate marketing</em>. 
+Dengan menjadi affiliate, pengguna dapat mempromosikan produk dalam konten video 
+dan mendapatkan komisi dari setiap penjualan yang terjadi melalui link mereka. 
+Cara ini terbukti menjanjikan karena didukung algoritma TikTok yang memudahkan konten 
+untuk viral dan menjangkau audiens lebih luas.</p>
+
+<p>Peluang lain datang dari e-commerce seperti Shopee. 
+Banyak pebisnis pemula memanfaatkan platform ini untuk menjual berbagai produk, 
+mulai dari fashion, makanan, hingga perlengkapan rumah tangga. 
+Shopee menyediakan fitur iklan, promosi, dan program gratis ongkir 
+yang membantu penjual bersaing dan memperluas pasar. 
+Tidak heran, banyak UMKM kini menjadikan Shopee sebagai toko utama mereka.</p>
+
+<p>Selain produk fisik, bisnis produk digital juga semakin populer. 
+E-book, template desain, kursus online, hingga software adalah contoh produk digital 
+yang bisa dipasarkan tanpa harus memikirkan stok dan pengiriman. 
+Produk digital menawarkan keuntungan jangka panjang karena setelah dibuat, 
+produk bisa dijual berulang kali tanpa biaya tambahan produksi.</p>
+
+<p>Tren lainnya adalah menjadi streamer. 
+Dengan platform seperti Twitch, YouTube Live, atau Facebook Gaming, 
+banyak anak muda menghasilkan pendapatan dari hobi bermain game atau membuat konten live. 
+Pendapatan streamer bisa berasal dari donasi penonton, iklan, hingga kerja sama brand. 
+Meski membutuhkan konsistensi dan interaksi intens dengan audiens, 
+streaming telah terbukti menjadi sumber penghasilan besar bagi banyak orang.</p>
+
+<p>Meski peluangnya beragam, bisnis online juga memiliki tantangan. 
+Persaingan semakin ketat, sehingga kreativitas, konsistensi, 
+dan kemampuan membangun personal branding menjadi kunci utama. 
+Tanpa strategi pemasaran digital yang tepat, bisnis online mudah tenggelam 
+di tengah lautan konten yang terus bertambah setiap hari.</p>
+
+<p><em>"Bisnis online kini bukan sekadar tren, melainkan zaman dimana setiap orang memiliki
+   kesempatan untuk sukses dengan memanfaatkan kekuatan internet. 
+Yang terpenting adalah keberanian untuk memulai, konsistensi dalam berkarya, 
+dan kemampuan beradaptasi dengan perkembangan teknologi."</em></p>
+
+
+
+
+  `
+}
+
+
+  
+];
+
+ // Fungsi render daftar artikel di sidebar
+    function renderSidebar() {
+      const sidebar = document.getElementById("latest-blogs");
+      sidebar.innerHTML = articles.map(article => `
+        <div class="single-news-area d-flex mb-3" style="cursor:pointer" onclick="renderArticle(${article.id})">
+          <div class="blog-thumbnail me-3">
+            <img src="${article.thumbnail}" alt="">
+          </div>
+          <div class="blog-content">
+            <a href="javascript:void(0)" class="post-title">${article.title}</a>
+            <span class="post-date">${article.date}</span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+
+function renderArticle(id) {
+  const article = articles.find(a => a.id === id);
+  const postDetails = document.getElementById("post-details");
+  postDetails.innerHTML = `
+    <div class="single-post">
+      <img src="${article.image}" alt="" class="post-image mb-4" style="max-width:100%; border-radius:8px;">
+      <h2>${article.title}</h2>
+      <div class="meta mb-3">
+        <span class="post-date">📅 ${article.date}</span> |
+        ${article.author ? `<span class="ms-3">👤 ${article.author}</span>` : ""}
+         <span>| 🔗 <a href="${article.source}" target="_blank">Sumber</a></span>
+      </div>
+      <div class="article-content">
+        ${article.content}
+      </div>
+    </div>
+  `;
+}
+
+
+
+  // Render pertama kali (artikel pertama + sidebar)
+  renderArticle(articles[0].id);
+  renderSidebar();
+
+
+  // Ambil parameter dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const articleId = parseInt(urlParams.get("id")) || 1;
+
+// Render artikel sesuai ID
+renderArticle(articleId);
+renderSidebar();
+
+
+
+</script>
+  <!-- jQuery js -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- All js -->
+  <script src="js/mona.bundle.js"></script>
+  <!-- Active js -->
+  <script src="js/default-assets/active.js"></script>
+
+</body>
+
+</html>

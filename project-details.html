@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio Project Details">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Project Details - Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/core-img/favicon.ico">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="wrapper">
+      <div class="cssload-loader"></div>
+    </div>
+  </div>
+
+   <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="monaNav">
+
+          <!-- Background Curve -->
+          <div class="bg-curve" style="background-image: url(./img/core-img/curveh.png);"></div>
+
+          <!-- Logo -->
+          <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Project</a></li>
+                <li><a href="./blog.html">My Article</a></li>
+                <li><a href="./casting.html">Contact Me</a></li>
+              </ul>
+
+              <!-- Search Icon -->
+              <div class="search-icon" data-toggle="modal" data-target="#searchModal">
+                <i class="icon_search"></i>
+              </div>
+            </div>
+            <!-- Nav End -->
+
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area">
+    <div class="container h-100">
+      <div class="row h-100 align-items-end">
+        <div class="col-12">
+          <div class="breadcumb--con">
+            <h2 class="title">Project Details</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Details</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Project Details Area Start ***** -->
+
+  <div id="google_translate_element"></div>
+
+  <section class="blog-details-area">
+    <div class="container">
+      <div class="row">
+        <!-- Project Details -->
+        <div class="col-12 col-lg-8">
+          <div class="blog-details-content mt-5 mb-80 pe-lg-4" style="border-right: 1px solid #eee;">
+            <div id="project-details">
+              <!-- Konten project akan diisi dari JavaScript -->
+               <div id="project-description"></div>
+              <button id="translate-btn">Terjemahkan</button>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-12 col-lg-4">
+          <div class="sidebar-area mt-5 ps-lg-4">
+            <div class="single-widget-area news-widget mb-80">
+              <h5 class="widget-title">Other Projects</h5>
+              <div id="other-projects">
+                <!-- Daftar project lain diisi dari JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Project Details Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-40-0">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <div class="single-footer-widget mb-30">
+             <p>Email: hendriprastyomhs28@gmail.com</p>
+            <div class="footer-social-info mt-3 mb-3">
+              <a href="https://instagram.com/hndrriii" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://wa.me/628745739739" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+              <a href="mailto:hendriprastyomhs28@gmail.com" class="email"><i class="fa fa-envelope"></i></a>
+            </div>
+            <div class="copywrite-text">
+              <p>&copy; <script>document.write(new Date().getFullYear());</script> Hendri. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- Script Projects -->
+  <script>
+    const projects = [
+      {
+        id: 1,
+        title: "Sample Project Of Deposit Transaction",
+        date: "19 Aug 2025",
+        image: "./img/bg-img/p-1.png",
+        description: `
+          <p>In this project, I worked on transaction data from a waste bank deposit system. The raw data consisted of deposit records that needed to be structured, validated, and stored systematically.</p>
+          <p>The process began with data preparation. Raw records often contained inconsistencies, so I applied data cleaning methods such as trimming unnecessary spaces, validating transaction formats, and checking for duplicate or missing entries.</p>
+          <p>Once the data was ready, I entered it into a custom-built system that I developed specifically for this case. The system allows transactions to be stored in a structured format, making it easier to search, track, and update records as needed.
+             Afterward, the system summarized the data automatically. This summary provides a clear overview of deposits, balances, and transaction trends, ensuring that the waste bank can monitor activities efficiently.</p>
+          <p>Through this demo project, I demonstrated my ability to: 
+            Handle data entry with precision and attention to detail, Apply data cleaning and validation techniques to improve accuracy
+            , Build a simple data entry system to streamline workflows, 
+            Convert raw data into meaningful summaries for analysis and reporting.</p>
+          <p>This project reflects not only my technical skills but also my commitment to turning unstructured information into valuable insights that support better decision-making.</p>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/1BYNljAvQbdNiUwYeX0M6C81vM65fJsyt/edit?usp=drive_link&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 2,
+        title: "Financial Data Entry & Recap Projectn",
+        date: "23 Aug 2025",
+        image: "./img/bg-img/p-2.png",
+        description: `
+          <p>In this project, I worked with scanned images of an organization’s financial records, originally kept in handwritten bookkeeping format. The first step was carefully reviewing and interpreting each scanned page to ensure that every transaction detail was understood correctly before being digitized.</p>
+          <p>Once the records were clear, I transferred the information into Microsoft Excel. This process required precision and consistency so that the digital data would fully match the original book. After entering the data, I organized and validated the records to eliminate possible errors such as inconsistencies or missing values.</p>
+          <p>With the data properly structured, I created recap tables that summarized the organization’s financial activities. These tables provided a clearer view of income, expenses, and balances, making the information much easier to track and analyze compared to the raw handwritten records.</p>
+          <p>The final result was a professional digital version of the financial book, transformed into a structured and summarized format that supports more efficient monitoring and decision-making.</p>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/137qTxdQ3I2WsFlSlhhJQHGXTXG6L-3Te/edit?usp=sharing&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 3,
+        title: "Alumni Data Entry & Recap Project",
+        date: "02 Sep 2025",
+        image: "./img/bg-img/p-3.png",
+        description: `
+          <p>This project focused on processing alumni records that were originally stored in handwritten form and available only as scanned images. The task required carefully reading and interpreting the scanned data, then transferring it into a structured digital format using Microsoft Excel.</p>
+          <p>After the information was entered, I organized and validated the records to ensure accuracy and consistency. Names, contact details, and other important fields were standardized so that the digital version would be easy to manage. Once the data was complete, I summarized it into recap tables that provide a clear overview of the alumni database.</p>
+          <p>Through this process, the scattered and unstructured scanned information was transformed into a professional digital table. The result makes it easier for the organization to monitor, manage, and utilize alumni data for reporting, communication, and future planning.</p>
+        `,
+        file: ""
+      },
+      {
+        id: 4,
+        title: "Dummy - Data Cleaning Project – Service Company Records",
+        date: "06 Sep 2025",
+        image: "./img/bg-img/p-4.png",
+        description: `
+          <p>This dummy project demonstrates my ability to work with messy and unstructured data. The dataset was a dummy collection of records from a service company, where the raw information contained inconsistencies, duplicates, and incomplete fields.</p>
+          <p>The first step involved rewriting and restructuring the data into a clear, tabular format that could be processed further. Once the records were standardized, I performed a thorough cleaning process to remove duplicates, correct formatting issues, and fill in missing values where possible.</p>
+          <p>After the cleaning process was complete, I transformed the dataset into an organized and reliable source of information. The final version not only eliminated errors but also made the data easier to analyze, summarize, and use for decision-making.</p>
+          <p>This project highlights how proper data preparation and cleaning can turn messy records into valuable information that supports reporting, planning, and future organizational needs.</P>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/1Z4xJfUpQlLSOgQ0VHD1hzBKDiggOdniV/edit?usp=sharing&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 5,
+        title: "Sales Notes Data Entry & Recap Project",
+        date: "11 Sep 2025",
+        image: "./img/bg-img/p-5.png",
+        description: `
+          <p>This project involved working with several handwritten sales notes that needed to be converted into a digital format. The original information was only available on paper, which made it difficult to manage, analyze, or summarize.</p>
+          <p>I began by carefully reading each sales note and entering the details into Microsoft Excel. Once the records were digitized, I organized them into a clean and structured table to ensure that the data could be processed efficiently. After validating and standardizing the entries, I created recap tables that summarized the sales activities, including totals and key figures that provided a clearer overview of performance.</p>
+          <p>The result of this project was a professional digital dataset that transformed scattered handwritten notes into a structured financial record. With the data properly managed in Excel, it became much easier to monitor sales, generate insights, and use the information for future business planning.</p>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/1xZyiqG_A1uWOptq6pQEkHFjXBdhH-mwj/edit?usp=sharing&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 6,
+        title: "Business Contact Data Entry Project",
+        date: "14 Sep 2025",
+        image: "./img/bg-img/p-6.png",
+        description: `
+          <p>This project focused on transforming business contact information from several companies that was originally stored only in scanned photo form. Since the data was unstructured and difficult to use directly, the first step was to carefully review each scanned record and rewrite the details into a structured table format.</p>
+          <p>Using Microsoft Excel, I entered all the information systematically, ensuring accuracy and consistency across the dataset. Once the records were digitized, I organized them into a clear table that allowed for easier tracking and management. To improve usability, I also created a summary view, making it simpler to access key information such as company names, contact persons, phone numbers, and email addresses.</p>
+          <p>Through this process, the scattered scanned photos were successfully converted into a professional, digital contact database. The final result makes it much easier to manage business relationships and provides a reliable resource for future communication and organizational needs.</p>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/1bP8YBrwF09vJwgvnh3xG2BtCRe18Ts33/edit?usp=sharing&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 7,
+        title: "SIATech Survey Data Retyping Project",
+        date: "14 Sep 2025",
+        image: "./img/bg-img/p-7.png",
+        description: `
+          <p>This project involved working with a scanned survey sheet from SIATech that needed to be converted into a digital format. Since the original data was only available on paper, it could not be edited, updated, or processed efficiently.</p>
+          <p>I carefully reviewed the scanned sheet and retyped the entire content into a Microsoft Word document. During the process, I ensured that the formatting, structure, and details matched the original survey, while also making the document cleaner and easier to read.</p>
+          <p>The final result was a professional, editable Word file that accurately represented the original survey data. This digital version allows for easier updates, modifications, and future use without the limitations of relying on a scanned image.</p>
+        `,
+        file: "https://docs.google.com/document/d/1K9eZRWViwINAjaM9FuLT7cRzVWVP7MYw/edit?usp=sharing&ouid=113749316998026829419&rtpof=true&sd=true"
+      },
+      {
+        id: 8,
+        title: "Restaurant Research & Data Entry Mock Project",
+        date: "21 Sep 2025",
+        image: "./img/bg-img/p-8.png",
+        description: `
+          <p>This mock project was created to simulate how research data can be collected, organized, and presented in a structured format. The task was to find the 25 best restaurants in New York and compile the information into a clear table for use in an upcoming meeting.</p>
+          <p>I researched and gathered key details such as restaurant names, addresses, contact information, and cuisine types. The information was then entered and managed in tabular form using Microsoft Excel, making it easy to compare options and quickly identify the most suitable places.</p>
+          <p>The final table provided a concise yet comprehensive overview of the selected restaurants, turning scattered information into a well-organized resource. This project highlights my ability to combine research, data entry, and summarization to produce professional and useful outputs for business or planning needs.</p>
+        `,
+        file: "https://docs.google.com/spreadsheets/d/1DY9WFL9k9yourNfK0kvPCFozd0YLmkAgnvvyk8aZs1s/edit?usp=sharing"
+      }
+    ];
+
+    const params = new URLSearchParams(window.location.search);
+    const projectId = parseInt(params.get("id")) || 1;
+    const project = projects.find(p => p.id === projectId);
+
+    const container = document.getElementById("project-details");
+    if (project) {
+      container.innerHTML = `
+        <img src="${project.image}" alt="${project.title}" class="mb-4" style="max-width:100%;">
+        <h2>${project.title}</h2>
+        <span class="post-date">${project.date}</span>
+        <div class="project-description mt-3">${project.description}</div>
+        <a href="${project.file}" class="btn btn-primary mt-3" download>View File</a>
+      `;
+    } else {
+      container.innerHTML = "<p>Project tidak ditemukan.</p>";
+    }
+
+    // Sidebar
+    const sidebar = document.getElementById("other-projects");
+    sidebar.innerHTML = projects.map(p => `
+      <div class="single-news-area d-flex mb-3">
+        <div class="blog-thumbnail me-3">
+          <a href="project-details.html?id=${p.id}"><img src="${p.image}" alt=""></a>
+        </div>
+        <div class="blog-content">
+          <a href="project-details.html?id=${p.id}" class="post-title">${p.title}</a>
+          <span class="post-date">${p.date}</span>
+        </div>
+      </div>
+    `).join("");
+  </script>
+
+  <!-- JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mona.bundle.js"></script>
+  <script src="js/default-assets/active.js"></script>
+
+</body>
+</html>
